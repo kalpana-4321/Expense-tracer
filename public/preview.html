@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Logo Preview</title>
+  <style>
+    body {
+      background: #0b0f17;
+      color: #f8fafc;
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      padding: 40px;
+    }
+    .preview-card {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .row {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .light-card {
+      background: #f4f7fb;
+      border: 1px solid #dfe7f0;
+      border-radius: 20px;
+      padding: 24px;
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+  <h1>NOVA Finance · Brand Identity & Iconography</h1>
+
+  <div class="row">
+    <div class="preview-card">
+      <h3>Favicon / App Icon (512x512)</h3>
+      <img src="favicon.svg" width="160" height="160" />
+      <div class="row">
+        <img src="favicon.svg" width="64" height="64" />
+        <img src="favicon.svg" width="32" height="32" />
+        <img src="favicon.svg" width="16" height="16" />
+      </div>
+    </div>
+
+    <div class="light-card">
+      <h3>Favicon on Light Theme Background</h3>
+      <div class="row" style="padding: 16px;">
+        <img src="favicon.svg" width="96" height="96" />
+        <img src="favicon.svg" width="48" height="48" />
+        <img src="favicon.svg" width="32" height="32" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>

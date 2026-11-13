@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Deep Obsidian Slate Background Gradient -->
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1726" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Electric Cyan Main Glow Gradient -->
+    <linearGradient id="favCyan" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#7dd3fc" />
+    </linearGradient>
+
+    <!-- Deep Luminous Cyan for Supporting Stems -->
+    <linearGradient id="favStem" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+
+    <!-- Diamond Star Flare Gradient -->
+    <linearGradient id="favStar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Subtle Radial Glow -->
+    <radialGradient id="favBloom" cx="68%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Squircle Base with Precision Border -->
+  <rect width="512" height="512" rx="120" fill="url(#favBg)" />
+  <rect width="506" height="506" x="3" y="3" rx="117" fill="none" stroke="#1e293b" stroke-width="2.5" stroke-opacity="0.8" />
+  
+  <!-- Subtle Energy Bloom behind the Star -->
+  <rect width="512" height="512" rx="120" fill="url(#favBloom)" />
+
+  <g transform="translate(6, 0)">
+    <!-- Left Stem: Clean vertical pillar with rounded caps -->
+    <rect x="122" y="142" width="62" height="228" rx="18" fill="url(#favStem)" opacity="0.9" />
+
+    <!-- Diagonal Dynamic Slash: Sweeps from top-left to bottom-right -->
+    <path
+      d="M 184 144 C 184 136 192 132 202 134 C 208 135 214 139 218 145 L 320 348 C 324 356 333 362 342 362 C 352 362 360 370 360 380 C 360 387 354 392 344 392 C 334 392 324 386 318 376 L 194 162 C 188 152 184 146 184 144 Z"
+      fill="url(#favCyan)"
+    />
+
+    <!-- Right Stem: Ascending pillar -->
+    <rect x="328" y="186" width="62" height="184" rx="18" fill="url(#favStem)" />
+
+    <!-- Nova Star (Luminous 4-point Diamond at Top Right) -->
+    <g transform="translate(359, 134)">
+      <!-- Outer soft halo -->
+      <circle cx="0" cy="0" r="32" fill="#38bdf8" opacity="0.18" />
+      <circle cx="0" cy="0" r="16" fill="#38bdf8" opacity="0.32" />
+      <!-- Star Ray Cross -->
+      <path
+        d="M 0 -38 Q 0 0 38 0 Q 0 0 0 38 Q 0 0 -38 0 Q 0 0 0 -38 Z"
+        fill="url(#favStar)"
+      />
+      <!-- Inner brilliant core -->
+      <circle cx="0" cy="0" r="5" fill="#ffffff" />
+    </g>
+  </g>
+</svg>
